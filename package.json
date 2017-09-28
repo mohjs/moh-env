@@ -1,0 +1,23 @@
+{
+  "name": "moh-env",
+  "version": "0.0.1",
+  "description": "Environment management plugin",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohJS/moh-env.git"
+  },
+  "author": "ole3021 (Oliver.W)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohJS/moh-env/issues"
+  },
+  "homepage": "https://github.com/mohJS/moh-env#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "env-var": "^2.4.3"
+  }
+}
