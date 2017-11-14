@@ -29,3 +29,16 @@ serverBar:
   host: http://ole3021.me
   port: 3021
 ```
+
+### generated env configs
+```json
+{
+    serverFoo: {
+        host: 'http://ole3021.me:3021'
+    },
+    serverBar: {
+        host: 'http://ole3021.me',
+        port: 3021
+    }
+}
+```
