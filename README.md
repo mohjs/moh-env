@@ -13,3 +13,19 @@ environment management for moh
 ## TODO
 - [ ] Easy generate env configurate info
 
+
+### default.yml
+```yaml
+# type, env key, default value, description
+serverFoo:
+  host: ['string', 'SERVER_FOO_HOST', 'http://ole3021.me:3021','The host of server foo, eg: http://foo.com/3322']
+serverBar:
+  host: ['string', 'SERVER_BAR_HOST', ~, 'The host of server bar, eg: http://foo.com/3322 [required]']
+```
+
+### development.yml
+```yaml
+serverBar:
+  host: http://ole3021.me
+  port: 3021
+```
