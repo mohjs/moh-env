@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mohJS/moh-env#readme",
   "dependencies": {
-    "dotenv": "^4.0.0",
-    "env-var": "^2.4.3"
+    "js-yaml": "^3.10.0",
+    "moh-logger": "^0.1.0"
   }
 }
