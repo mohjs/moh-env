@@ -19,5 +19,8 @@
   "dependencies": {
     "js-yaml": "^3.10.0",
     "moh-logger": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0"
   }
 }

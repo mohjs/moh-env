@@ -1,0 +1,5 @@
+serverFoo:
+  host: ['string', 'SERVER_FOO_HOST', 'http://ole3021.me:3021','The host of server foo, eg: http://foo.com/3322']
+  port: ['string', 'SERVER_FOO_PORT', 3021, 'The prot of server foo, eg: 3021']
+serverBar:
+  host: ['string', 'SERVER_BAR_HOST', ~, 'The host of server bar, eg: http://foo.com/3322 [required]']

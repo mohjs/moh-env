@@ -10,18 +10,23 @@ environment management for moh
 * Easy to get listed env configs description, helpful for devops and other users
 * Easy manages secret env config infos
 
-## TODO
-- [ ] Easy generate env configurate info
+## Usage
 
+1. default folder is `envs` int he root of the project
+2. in the folder should include `default.yml`, `development.yml`, `test.yml`, `staging.yml`, `production.yml`
+3. the `default.yml` should be like below, to config the value type, env variable name, default value, and description
 
 ### default.yml
 ```yaml
 # type, env key, default value, description
 serverFoo:
   host: ['string', 'SERVER_FOO_HOST', 'http://ole3021.me:3021','The host of server foo, eg: http://foo.com/3322']
+  port: ['string', 'SERVER_FOO_PORT', ~, 'The prot of server foo, eg: 3021']
 serverBar:
   host: ['string', 'SERVER_BAR_HOST', ~, 'The host of server bar, eg: http://foo.com/3322 [required]']
 ```
+
+4. Add as many environment related config as you need, the `development.yml` like below
 
 ### development.yml
 ```yaml
@@ -30,15 +35,22 @@ serverBar:
   port: 3021
 ```
 
+### Init in project
+```javascript
+const envs = require('moh-envs').init()
+
+const host = envs.ConfigFoo.host
+```
+
 ### generated env configs
-```json
+```javascript
 {
-    serverFoo: {
-        host: 'http://ole3021.me:3021'
-    },
-    serverBar: {
-        host: 'http://ole3021.me',
-        port: 3021
-    }
+  serverFoo: {
+    host: 'http://ole3021.me:3021'
+    port: 3021
+  },
+  serverBar: {
+    host: 'http://ole3021.me'
+  }
 }
 ```
