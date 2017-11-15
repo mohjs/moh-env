@@ -1,6 +1,6 @@
 {
   "name": "moh-env",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Environment management plugin",
   "main": "./lib/index.js",
   "scripts": {
