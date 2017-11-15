@@ -18,6 +18,7 @@ environment management for moh
 
 ### default.yml
 ```yaml
+# type supprot: 'string', 'number', 'Boolean', 'Date', null/~
 # type, env key, default value, description
 serverFoo:
   host: ['string', 'SERVER_FOO_HOST', 'http://ole3021.me:3021','The host of server foo, eg: http://foo.com/3322']
