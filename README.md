@@ -40,7 +40,7 @@ serverBar:
 ```javascript
 const envs = require('moh-envs').init()
 
-const host = envs.ConfigFoo.host
+const host = envs.serverBar.host
 ```
 
 ### generated env configs
