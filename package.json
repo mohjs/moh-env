@@ -22,5 +22,9 @@
   },
   "devDependencies": {
     "ava": "^0.23.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
